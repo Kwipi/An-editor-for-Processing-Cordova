@@ -1,15 +1,35 @@
-An-editor-for-Processing-Android
-================================
 
 
-This is a Prcessing editor for Android.
+# Setup the project
 
-It is made with Phonegap, and based on the online editor that van be seen on Processing.js official website:
-http://processingjs.org/tools/processing-helper.html
+## create the project
 
-It supports the rendering of sketches, load sketch from SDcard, save sketch to SDcard.
+> cordova create cordova com.kwipi.processing_free AnEditorForProcessing
 
-Features for next releases:
-- syntax highlighting
-- dropbox load/save
-- copy/paste ability
+> cd cordova
+
+
+## add Android platform
+
+> cordova platform add android
+
+
+
+
+## Add plugins
+
+> cordova plugin add cordova-plugin-file
+
+> cordova plugin add cordova-plugin-splashscreen
+
+
+
+
+
+
+
+# Run the project
+
+## run on a device
+
+> cordova run android --device

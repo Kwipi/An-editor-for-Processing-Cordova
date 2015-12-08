@@ -1,0 +1,17 @@
+logs
+*.log
+pids
+*.pid
+*.seed
+.lock-wscript
+lib-cov
+build/Release
+.directory
+.DS_Store
+
+node_modules
+npm-debug.log
+
+tmp
+
+platforms

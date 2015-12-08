@@ -1,8 +1,0 @@
-<resources>
-
-    <string name="app_name">An Editor for Processing</string>
-    <string name="hello_world">Hello world!</string>
-    <string name="menu_settings">Settings</string>
-    <string name="title_activity_processing_free">An Editor for Processing</string>
-
-</resources>

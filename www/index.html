@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src *; font-src: 'self'">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <title>An Editor for Processing</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" media="all">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" media="all">
+    <link rel="stylesheet" href="assets/css/font-awesome-animation.min.css" media="all">
+    <link rel="stylesheet" href="assets/css/crayon.css" media="all">
+    <link rel="stylesheet" href="assets/css/rangeslider.css" media="all">
+    <link rel="stylesheet" href="assets/css/codemirror/codemirror.css" media="all">
+    <link rel="stylesheet" href="assets/css/codemirror/theme/monokai.css" media="all">
+    <link rel="stylesheet" href="assets/css/app.css" media="all">
+    <!--<link rel="stylesheet" href="assets/css/debug.css" media="all">-->
+  </head>
+  <body>
+      <nav class="navbar navbar-default navbar-fixed-top" id="navtop-region"></nav>
+      <div id="main-region" class="container"></div>
+      <div id="footer-region" class="container"></div>
+
+      <!--<script type="text/javascript" src="app/lib/console-log-div.js"></script>-->
+      <script type="text/javascript" src="cordova.js"></script>
+      <script type="text/javascript" src="app/lib/processing.min.js"></script>
+      <script type="text/javascript" src="app/lib/codemirror/lib/codemirror.js"></script>
+      <script type="text/javascript" src="app/lib/codemirror/mode/clike/clike.js"></script>
+      <script type="text/javascript" data-main="app/index.js" src="app/lib/requirejs/require.js"></script>
+  </body>
+</html>
