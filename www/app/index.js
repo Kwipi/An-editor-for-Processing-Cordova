@@ -77,21 +77,6 @@ define('index', [
 ], function (
   AnEditorForProcessing
 ) {
-  var cordovaApp = {
-    initialize: function() {
-      this.bindEvents();
-    },
-    bindEvents: function() {
-      document.addEventListener('deviceready', this.onDeviceReady, false);
-    },
-    onDeviceReady: function() {
-      cordovaApp.receivedEvent('deviceready');
-    },
-    receivedEvent: function(id) {
-      var app = AnEditorForProcessing;
-
-      app.start();
-    }
-  };
-  cordovaApp.initialize();
+  var app = AnEditorForProcessing;
+  app.start();
 });

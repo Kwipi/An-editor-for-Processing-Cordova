@@ -2,7 +2,7 @@
   <div class="panel panel-default" role="presentation">
     <div class="panel-heading"><i class="fa fa-tag"></i> <%= name %></div>
     <div class="panel-body">
-      <form id="edit-sketch-form" class="row" data-toggle="validator" role="form">
+      <form id="edit-sketch-form" data-toggle="validator" role="form">
         <div class="row">
           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <div class="form-group has-feedback">
@@ -12,8 +12,7 @@
             </div>
             <div class="form-group has-feedback">
               <label for="edit-sketch-content" class="control-label">The sketch</label>
-              <textarea class="form-control" id="edit-sketch-content" required><%= code %></textarea>
-              <span class="fa form-control-feedback" aria-hidden="true"></span>
+              <textarea class="form-control" id="edit-sketch-content"><%= code %></textarea>
             </div>
             <div id="edit-sketch-canvas">
               <canvas></canvas>

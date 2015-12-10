@@ -22,7 +22,6 @@ define([
       this.$el.addClass('view row new-sketch-page')
         .attr('role', 'article')
         .attr('itemprop', 'mainContentOfPage');
-      var self = this;
 
       this.$el.find('#new-sketch-form').validator({
         feedback: {
@@ -32,10 +31,15 @@ define([
         disable: true
       });
 
-      this.editor = CodeMirror.fromTextArea(this.$el.find('#new-sketch-content')[0], {
-        lineNumbers: true,
-        mode: 'clike'
-      });
+      var self = this;
+
+      setTimeout(function () {
+        self.editor = CodeMirror.fromTextArea(self.$el.find('#new-sketch-content')[0], {
+          lineNumbers: true,
+          mode: 'clike',
+          theme: 'monokai'
+        });
+      }, 100);
     },
     events: {
       'click #new-sketch-test': 'testSketch',

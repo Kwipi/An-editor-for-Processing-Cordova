@@ -2,30 +2,31 @@
   <div class="panel panel-default" role="presentation">
     <div class="panel-heading"><i class="fa fa-plus-square"></i> Add a sketch</div>
     <div class="panel-body">
-      <form id="new-sketch-form" class="row" data-toggle="validator" role="form">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <div class="form-group has-feedback">
-            <label for="new-sketch-name" class="control-label">Name of this sketch</label>
-            <input class="form-control" type="text" id="new-sketch-name" value="" placeholder="name of this sketch" name="new-sketch-name" required>
-            <span class="fa form-control-feedback" aria-hidden="true"></span>
-          </div>
-          <div class="form-group has-feedback">
-            <label for="new-sketch-content" class="control-label">The sketch</label>
-            <textarea class="form-control" id="new-sketch-content" required></textarea>
-            <span class="fa form-control-feedback" aria-hidden="true"></span>
-          </div>
-          <div id="new-sketch-canvas">
-            <canvas></canvas>
-          </div>
-          <div class="form-group">
-            <button type="submit" id="new-sketch-test" class="btn btn-primary btn-block btn-lg">
-              <i class="fa fa-check-circle"></i> Execute this sketch
-            </button>
-          </div>
-          <div class="form-group">
-            <button type="submit" id="new-sketch-validate" class="btn btn-success btn-block btn-lg">
-              <i class="fa fa-floppy-o"></i> Save this sketch
-            </button>
+      <form id="new-sketch-form" data-toggle="validator" role="form">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="form-group has-feedback">
+              <label for="new-sketch-name" class="control-label">Name of this sketch</label>
+              <input class="form-control" type="text" id="new-sketch-name" value="" placeholder="name of this sketch" name="new-sketch-name" required>
+              <span class="fa form-control-feedback" aria-hidden="true"></span>
+            </div>
+            <div class="form-group has-feedback">
+              <label for="new-sketch-content" class="control-label">The sketch</label>
+              <textarea class="form-control" id="new-sketch-content"></textarea>
+            </div>
+            <div id="new-sketch-canvas">
+              <canvas></canvas>
+            </div>
+            <div class="form-group">
+              <button type="submit" id="new-sketch-test" class="btn btn-primary btn-block btn-lg">
+                <i class="fa fa-check-circle"></i> Execute this sketch
+              </button>
+            </div>
+            <div class="form-group">
+              <button type="submit" id="new-sketch-validate" class="btn btn-success btn-block btn-lg">
+                <i class="fa fa-floppy-o"></i> Save this sketch
+              </button>
+            </div>
           </div>
         </div>
       </form>
